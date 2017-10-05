@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./css/style.css";
 import headerImg from "./images/header-img.jpg";
-import ecommerceImg from "./images/ecommerce-site.png";
-// import codeSnippetImg from "./images/code-snippets.png";
 import basicsMockup from "./images/e-commerce-site.png";
 import codeSnippetMockup from "./images/code-snippets.png";
 import songShareMockup from "./images/song-share-app.png";
@@ -65,7 +63,7 @@ class App extends Component {
                   {/* <!-- Button --> */}
                   <li>
                     <a href="" target="_blank">
-                      <span className="btn btn-mod btn-circle btn-w">
+                      <span className="btn btn-mod btn-circle">
                         <i className="fa fa-cloud-download" /> Download CV
                       </span>
                     </a>
@@ -77,9 +75,8 @@ class App extends Component {
           </nav>
           <section
             className="page-section bg-dark bg-dark-alfa-70"
-            data-background="images/cv-resume/section-bg-1.jpg"
             id="home"
-            style={{ backgroundImage: `url(${headerImg})` }}
+            style={{ backgroundImage: `url(${headerImg})`, minHeight: "100vh" }}
           >
             <div className="relative container">
               {/* <!-- Hero Content --> */}
@@ -120,7 +117,7 @@ class App extends Component {
             
             
             <!-- Skills Section --> */}
-          <section className="page-section" id="skills">
+          <section className="page-section" id="skills" style={{minHeight: '100vh'}}>
             <div className="container relative">
               <div className="row">
                 <div className="col-sm-3">
@@ -249,7 +246,6 @@ class App extends Component {
               width: "100%",
               backgroundSize: "135%",
               backgroundPosition: "center",
-              backgroundColor: "#00739d",
               backgroundColor: "#009ed8",
               display: "flex",
               justifyContent: "flex-end",
@@ -304,7 +300,6 @@ class App extends Component {
               width: "100%",
               backgroundSize: "135%",
               backgroundPosition: "center",
-              backgroundColor: "#d31948",
               backgroundColor: "#f91e56",
               display: "flex",
               justifyContent: "flex-end",
@@ -315,7 +310,6 @@ class App extends Component {
               className="work-intro"
               style={{
                 width: "50%",
-                backgroundColor: "#f91e56",
                 backgroundColor: "rgba(211, 25, 72, .7)",
                 minHeight: "100vh",
                 display: "flex",
@@ -392,12 +386,21 @@ class App extends Component {
                         <h4 className="mt-0 mb-0">
                           In House Marketing Supervisor
                         </h4>
-                        Cras felis nulla, auctor eget eros ac, tristique laoreet
-                        mauris. Nulla vel lorem non mauris auctor pulvinar in
-                        vitae justo. Quisque semper, enim in pharetra eleifend,
-                        turpis quam interdum ligula, sed sagittis neque arcu in
-                        velit. Suspendisse suscipit felis justo, ut laoreet
-                        ligula dignissim finibus.
+                        Led a team of 24 in house marketers to exceed budgeted
+                        leads at site level.
+                        <br /> Launched Online Manifest (OLM) with corporate
+                        development team; a web application used to book
+                        prospective leads for the sales department.
+                        <br />
+                        Created training guides for OLM and new onboarding
+                        training for the local site.
+                        <br />
+                        Developed new marketing strategies and evaluated
+                        incoming arrival flow with sales partners and regional
+                        training team to write action plans to exceed specific
+                        objectives. <br />
+                        Instill a culture of success by engaging peer to peer
+                        empowerment and mentality of “1 Team 1 Dream”
                       </div>
                     </div>
 
@@ -409,12 +412,7 @@ class App extends Component {
                       </div>
                       <div className="col-md-10">
                         <h4 className="mt-0 mb-0">Solutions Specialist</h4>
-                        Maecenas augue urna, pellentesque ut varius at, suscipit
-                        vitae lectus. Vestibulum ante ipsum primis in faucibus
-                        orci luctus et ultrices posuere cubilia. Nulla consequat
-                        felis at auctor eleifend. Mauris iaculis urna ac dolor
-                        ornare lobortis. Morbi rutrum ligula vel ipsum accumsan
-                        malesuada.
+                      Engage customers to build customized solutions in a dynamic environment.<br/> Accumulate and apply appropriate knowledge and expertise through self-development and continuous learning.<br/> Utilize sales expertise, passion for Verizon technology and customer interaction skills.
                       </div>
                     </div>
                   </div>
@@ -432,7 +430,7 @@ class App extends Component {
           {/* <!-- End Divider --> */}
 
           {/* <!-- Contact Section --> */}
-          <section className="page-section" id="contact">
+          <section className="page-section" id="contact" style={{minHeight: '90vh'}}>
             <div className="container relative">
               <div className="row">
                 <div className="col-sm-3">
