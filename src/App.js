@@ -86,7 +86,7 @@ class App extends Component {
               <div className="home-content">
                 <div className="home-text">
                   <div className="row mt-60 mt-xs-20">
-                    <div className="col-sm-6 col-lg-5 align-center pt-20 pt-lg-0 mb-xs-30">
+                    <div className="align-center pt-20 pt-lg-0 mb-xs-30">
                       <div className="hs-line-4 font-alt mb-20">
                         Dakota Nichols
                       </div>
@@ -196,7 +196,7 @@ class App extends Component {
             >
               <h2
                 className="section-title font-alt align-left mt-0 mb-70 mb-sm-40"
-                style={{ color: "#fff" }}
+                style={{ color: "#fff", padding: "100px 60px" }}
               >
                 Portfolio
               </h2>
@@ -351,48 +351,6 @@ class App extends Component {
             </div>
           </div>
           {/* end of portfolio items */}
-          <section
-            className="page-section bg-dark-lighter bg-dark-alfa-70"
-            data-background="images/cv-resume/section-bg-1.jpg"
-          >
-            <div className="container relative">
-              <div className="row alt-features-grid font-alt">
-                {/* <!-- Features Item --> */}
-                <div className="col-sm-4 wow fadeInRight" data-wow-delay="0.1s">
-                  <div className="alt-features-item align-center">
-                    <div className="alt-features-icon white">
-                      <span className="icon-telescope" />
-                    </div>
-                    <h3 className="alt-features-title">Unique Methods</h3>
-                  </div>
-                </div>
-                {/* <!-- End Features Item -->
-                        
-                        <!-- Features Item --> */}
-                <div className="col-sm-4 wow fadeInRight" data-wow-delay="0.2s">
-                  <div className="alt-features-item align-center">
-                    <div className="alt-features-icon white">
-                      <span className="icon-presentation" />
-                    </div>
-                    <h3 className="alt-features-title">Quality Services</h3>
-                  </div>
-                </div>
-                {/* <!-- End Features Item -->
-                        
-                        <!-- Features Item --> */}
-                <div className="col-sm-4 wow fadeInRight" data-wow-delay="0.3s">
-                  <div className="alt-features-item align-center">
-                    <div className="alt-features-icon white">
-                      <span className="icon-piechart" />
-                    </div>
-                    <h3 className="alt-features-title">Excellent result</h3>
-                  </div>
-                </div>
-                {/* <!-- End Features Item --> */}
-              </div>
-            </div>
-          </section>
-
           {/* <!-- experience Section --> */}
           <section className="page-section" id="experience">
             <div className="container relative">
@@ -409,26 +367,30 @@ class App extends Component {
                 <div className="col-sm-9">
                   <div className="section-text">
                     <div className="row">
-                      <div className="col-md-2 black">2015&ndash;present</div>
+                      <div className="col-md-2 black">
+                        Jul 17 &ndash; Oct 17
+                      </div>
                       <div className="col-md-10">
                         <h4 className="mt-0 mb-0">
-                          Senior Vice President, Head of Design
+                          Full Stack Fundamentals w/React Specialization
                         </h4>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Cras urna dolor, laoreet rhoncus volutpat et, iaculis a
-                        felis. Ut iaculis, ipsum sed dignissim porta, dolor
-                        sapien imperdiet libero, vitae convallis dui nulla nec
-                        urna. Sed malesuada volutpat tortor vitae ultricies.
+                        Rigorous 12-week full stack fundamentals coding bootcamp
+                        specializing in highly focused, immersive training
+                        centered on language fluency, object-oriented
+                        programming, and project-based learning. Specialization
+                        in React framework.
                       </div>
                     </div>
 
                     <hr />
 
                     <div className="row">
-                      <div className="col-md-2 black">2013&ndash;2015</div>
+                      <div className="col-md-2 black">
+                        Oct 15 &ndash; Jul 17{" "}
+                      </div>
                       <div className="col-md-10">
                         <h4 className="mt-0 mb-0">
-                          Interactive Creative Director
+                          In House Marketing Supervisor
                         </h4>
                         Cras felis nulla, auctor eget eros ac, tristique laoreet
                         mauris. Nulla vel lorem non mauris auctor pulvinar in
@@ -442,11 +404,11 @@ class App extends Component {
                     <hr />
 
                     <div className="row">
-                      <div className="col-md-2 black">2010&ndash;2013</div>
+                      <div className="col-md-2 black">
+                        May 15 &ndash; Oct 15
+                      </div>
                       <div className="col-md-10">
-                        <h4 className="mt-0 mb-0">
-                          Freelance Creative Director and Senior Designer
-                        </h4>
+                        <h4 className="mt-0 mb-0">Solutions Specialist</h4>
                         Maecenas augue urna, pellentesque ut varius at, suscipit
                         vitae lectus. Vestibulum ante ipsum primis in faucibus
                         orci luctus et ultrices posuere cubilia. Nulla consequat
