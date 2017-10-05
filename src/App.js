@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "./css/style.css";
-import "./css/style-responsive.css";
-import "./css/animate.min.css";
-import "./css/vertical-rhythm.min.css";
-import "./css/owl.carousel.css";
-import "./css/magnific-popup.css";
 import headerImg from "./images/header-img.jpg";
+import ecommerceImg from "./images/ecommerce-site.png";
+// import codeSnippetImg from "./images/code-snippets.png";
+import basicsMockup from "./images/e-commerce-site.png";
+import codeSnippetMockup from "./images/code-snippets.png";
+import songShareMockup from "./images/song-share-app.png";
 
 class App extends Component {
   render() {
@@ -53,10 +53,10 @@ class App extends Component {
                     <a href="#skills">Skills</a>
                   </li>
                   <li>
-                    <a href="#experience">Experience</a>
+                    <a href="#portfolio">Portfolio</a>
                   </li>
                   <li>
-                    <a href="#education">Education</a>
+                    <a href="#experience">Experience</a>
                   </li>
                   <li>
                     <a href="#contact">Contact</a>
@@ -64,7 +64,7 @@ class App extends Component {
 
                   {/* <!-- Button --> */}
                   <li>
-                    <a href="#" target="_blank">
+                    <a href="" target="_blank">
                       <span className="btn btn-mod btn-circle btn-w">
                         <i className="fa fa-cloud-download" /> Download CV
                       </span>
@@ -109,39 +109,11 @@ class App extends Component {
                           tortor.
                         </p>
                         <hr className="white mb-30" />
-                        <div>
-                          <h4 className="font-alt mt-0 mb-20">Profile</h4>
-                          <div>
-                            <strong>Age:</strong>
-                            27
-                          </div>
-                          <div>
-                            <strong>Address:</strong>
-                            245 Quigley Blvd, Ste K
-                          </div>
-                          <div>
-                            <strong>Phone:</strong>
-                            +11 3 8376 6284
-                          </div>
-                          <div>
-                            <strong>Email:</strong>
-                            <a href="#">support@bestlooker.pro</a>
-                          </div>
-                          <div>
-                            <strong>Status:</strong>
-                            Available
-                          </div>
-                        </div>
                       </div>
-                    </div>
-
-                    <div className="col-sm-6 col-lg-offset-1">
-                      <img src="images/cv-resume/image-1.jpg" alt="" />
                     </div>
                   </div>
                 </div>
               </div>
-              {/* <!-- End Hero Content --> */}
             </div>
           </section>
           {/* <!-- End Home Section -->
@@ -167,94 +139,19 @@ class App extends Component {
                     fermentum nibh volutpat, accumsan purus.
                   </div>
 
-                  <div className="row">
-                    <div className="col-sm-6 mb-sm-50 mb-xs-30">
-                      {/* <!-- Bar Item --> */}
-                      <div className="progress tpl-progress">
-                        <div
-                          className="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="90"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        >
-                          Branding, % <span>90</span>
-                        </div>
-                      </div>
-                      {/* <!-- End Bar Item -->
-                                    
-                                    <!-- Bar Item --> */}
-                      <div className="progress tpl-progress">
-                        <div
-                          className="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="80"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        >
-                          Web Design, % <span>80</span>
-                        </div>
-                      </div>
-                      {/* <!-- End Bar Item -->
-                                    
-                                    <!-- Bar Item --> */}
-                      <div className="progress tpl-progress">
-                        <div
-                          className="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="85"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        >
-                          CSS3, % <span>85</span>
-                        </div>
-                      </div>
-                      {/* <!-- End Bar Item --> */}
-                    </div>
-
-                    <div className="col-sm-6 mb-sm-50 mb-xs-30">
-                      {/* <!-- Bar Item --> */}
-                      <div className="progress tpl-progress">
-                        <div
-                          className="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="80"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        >
-                          HTML5, % <span>80</span>
-                        </div>
-                      </div>
-                      {/* <!-- End Bar Item -->
-                                    
-                                    <!-- Bar Item --> */}
-                      <div className="progress tpl-progress">
-                        <div
-                          className="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="75"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        >
-                          JS/jQuery, % <span>75</span>
-                        </div>
-                      </div>
-                      {/* <!-- End Bar Item -->
-                                    
-                                    <!-- Bar Item --> */}
-                      <div className="progress tpl-progress">
-                        <div
-                          className="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="65"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        >
-                          Wordpress, % <span>65</span>
-                        </div>
-                      </div>
-                      {/* <!-- End Bar Item --> */}
-                    </div>
+                  <div className="row skill-list">
+                    <i className="devicon-javascript-plain devicon" />
+                    <i className="devicon-react-original devicon" />
+                    <i className="devicon-nodejs-plain devicon" />
+                    <i className="devicon-express-original devicon" />
+                    <i className="devicon-bootstrap-plain devicon" />
+                    <i className="devicon-html5-plain devicon" />
+                    <i className="devicon-css3-plain devicon" />
+                    <i className="devicon-git-plain devicon" />
+                    <i className="devicon-github-plain devicon" />
+                    <i className="devicon-mongodb-plain devicon" />
+                    <i className="devicon-postgresql-plain devicon" />
+                    <i className="devicon-sequelize-plain devicon" />
                   </div>
                 </div>
               </div>
@@ -265,9 +162,238 @@ class App extends Component {
           {/* <!-- Divider --> */}
           <hr className="mt-0 mb-0 " />
           {/* <!-- End Divider -->
-            
-            
-            <!-- experience Section --> */}
+
+             {/* <!-- Divider --> */}
+          {/* <!-- End Divider --> */}
+
+          {/* <!-- Portfolio Section --> */}
+          <div
+            id="portfolio"
+            className="parallax"
+            style={{
+              backgroundImage: `url(${basicsMockup})`,
+              height: "100%",
+              minHeight: "100vh",
+              width: "100%",
+              backgroundSize: "135%",
+              backgroundPosition: "center",
+              backgroundColor: "#333",
+              display: "flex",
+              justifyContent: "flex-end",
+              alignItems: "center"
+            }}
+          >
+            <div
+              className="work-intro"
+              style={{
+                width: "50%",
+                minHeight: "100vh",
+                display: "flex",
+                justifyContent: "flex-start",
+                alignItems: "flex-start",
+                flexDirection: "column"
+              }}
+            >
+              <h2
+                className="section-title font-alt align-left mt-0 mb-70 mb-sm-40"
+                style={{ color: "#fff" }}
+              >
+                Portfolio
+              </h2>
+            </div>
+            <div
+              className="work-intro"
+              style={{
+                width: "50%",
+                backgroundColor: "rgba(51, 51, 51, 0.7)",
+                minHeight: "100vh",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column"
+              }}
+            >
+              <h3 className="work-title" style={{ color: "#fff" }}>
+                Basics
+              </h3>
+              <div className="work-descr" style={{ color: "#fff" }}>
+                Mock E-commerce Site. Built with love, React, and Bootstrap.
+              </div>
+              <div className="workButtons">
+                <a
+                  href="http://back-to-basics.surge.sh/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-mod btn-medium"
+                >
+                  Demo
+                </a>
+                <a
+                  href="https://github.com/dakotachantz/e-commerce-site"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-mod btn-medium"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* end of portfolio item #1 */}
+          <div
+            className="parallax"
+            style={{
+              backgroundImage: `url(${codeSnippetMockup})`,
+              height: "100%",
+              minHeight: "100vh",
+              width: "100%",
+              backgroundSize: "135%",
+              backgroundPosition: "center",
+              backgroundColor: "#00739d",
+              backgroundColor: "#009ed8",
+              display: "flex",
+              justifyContent: "flex-end",
+              alignItems: "center"
+            }}
+          >
+            <div
+              className="work-intro"
+              style={{
+                width: "50%",
+                backgroundColor: "rgba(0, 115, 157, .7)",
+                minHeight: "100vh",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column"
+              }}
+            >
+              <h3 className="work-title" style={{ color: "#fff" }}>
+                Code Snippets
+              </h3>
+              <div className="work-descr" style={{ color: "#fff" }}>
+                Built with NodeJS, MongoDB, Mustache, and Express.
+              </div>
+              <div className="workButtons">
+                <a
+                  href="http://codesnippetorganizer.xyz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-mod btn-medium"
+                >
+                  Demo
+                </a>
+                <a
+                  href="https://github.com/dakotachantz/code-snippet"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-mod btn-medium"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* end of portolio item #2 */}
+          <div
+            className="parallax"
+            style={{
+              backgroundImage: `url(${songShareMockup})`,
+              height: "100%",
+              minHeight: "100vh",
+              width: "100%",
+              backgroundSize: "135%",
+              backgroundPosition: "center",
+              backgroundColor: "#d31948",
+              backgroundColor: "#f91e56",
+              display: "flex",
+              justifyContent: "flex-end",
+              alignItems: "center"
+            }}
+          >
+            <div
+              className="work-intro"
+              style={{
+                width: "50%",
+                backgroundColor: "#f91e56",
+                backgroundColor: "rgba(211, 25, 72, .7)",
+                minHeight: "100vh",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column"
+              }}
+            >
+              <h3 className="work-title" style={{ color: "#fff" }}>
+                Song Share App
+              </h3>
+              <div className="work-descr" style={{ color: "#fff" }}>
+                Built with NodeJS, MongoDB, Mustache, and Express.
+              </div>
+              <div className="workButtons">
+                <a
+                  href="http://song-share.surge.sh/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-mod btn-medium"
+                >
+                  Demo
+                </a>
+                <a
+                  href="https://github.com/dakotachantz/song-share-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-mod btn-medium"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* end of portfolio items */}
+          <section
+            className="page-section bg-dark-lighter bg-dark-alfa-70"
+            data-background="images/cv-resume/section-bg-1.jpg"
+          >
+            <div className="container relative">
+              <div className="row alt-features-grid font-alt">
+                {/* <!-- Features Item --> */}
+                <div className="col-sm-4 wow fadeInRight" data-wow-delay="0.1s">
+                  <div className="alt-features-item align-center">
+                    <div className="alt-features-icon white">
+                      <span className="icon-telescope" />
+                    </div>
+                    <h3 className="alt-features-title">Unique Methods</h3>
+                  </div>
+                </div>
+                {/* <!-- End Features Item -->
+                        
+                        <!-- Features Item --> */}
+                <div className="col-sm-4 wow fadeInRight" data-wow-delay="0.2s">
+                  <div className="alt-features-item align-center">
+                    <div className="alt-features-icon white">
+                      <span className="icon-presentation" />
+                    </div>
+                    <h3 className="alt-features-title">Quality Services</h3>
+                  </div>
+                </div>
+                {/* <!-- End Features Item -->
+                        
+                        <!-- Features Item --> */}
+                <div className="col-sm-4 wow fadeInRight" data-wow-delay="0.3s">
+                  <div className="alt-features-item align-center">
+                    <div className="alt-features-icon white">
+                      <span className="icon-piechart" />
+                    </div>
+                    <h3 className="alt-features-title">Excellent result</h3>
+                  </div>
+                </div>
+                {/* <!-- End Features Item --> */}
+              </div>
+            </div>
+          </section>
+
+          {/* <!-- experience Section --> */}
           <section className="page-section" id="experience">
             <div className="container relative">
               <div className="row">
@@ -339,237 +465,7 @@ class App extends Component {
             
             
             <!-- Section --> */}
-          <section
-            className="page-section bg-dark-lighter bg-dark-alfa-70"
-            data-background="images/cv-resume/section-bg-1.jpg"
-          >
-            <div className="container relative">
-              <div className="row alt-features-grid font-alt">
-                {/* <!-- Features Item --> */}
-                <div className="col-sm-4 wow fadeInRight" data-wow-delay="0.1s">
-                  <div className="alt-features-item align-center">
-                    <div className="alt-features-icon white">
-                      <span className="icon-telescope" />
-                    </div>
-                    <h3 className="alt-features-title">Unique Methods</h3>
-                  </div>
-                </div>
-                {/* <!-- End Features Item -->
-                        
-                        <!-- Features Item --> */}
-                <div className="col-sm-4 wow fadeInRight" data-wow-delay="0.2s">
-                  <div className="alt-features-item align-center">
-                    <div className="alt-features-icon white">
-                      <span className="icon-presentation" />
-                    </div>
-                    <h3 className="alt-features-title">Quality Services</h3>
-                  </div>
-                </div>
-                {/* <!-- End Features Item -->
-                        
-                        <!-- Features Item --> */}
-                <div className="col-sm-4 wow fadeInRight" data-wow-delay="0.3s">
-                  <div className="alt-features-item align-center">
-                    <div className="alt-features-icon white">
-                      <span className="icon-piechart" />
-                    </div>
-                    <h3 className="alt-features-title">Excellent result</h3>
-                  </div>
-                </div>
-                {/* <!-- End Features Item --> */}
-              </div>
-            </div>
-          </section>
-          {/* <!-- End Section -->
-            
-            
-            <!-- Education Section --> */}
-          <section className="page-section" id="education">
-            <div className="container relative">
-              <div className="row">
-                {/* <!-- Section Title --> */}
-                <div className="col-sm-3">
-                  <h2 className="section-title font-alt align-left mt-0 mb-70 mb-sm-40">
-                    Education
-                  </h2>
-                </div>
-                {/* <!-- End Section Title -->
-                        
-                        <!-- Section Content --> */}
-                <div className="col-sm-9">
-                  <div className="section-text">
-                    <div className="row">
-                      <div className="col-md-6">
-                        <div className="row">
-                          <div className="col-md-3 black">2015&ndash;2016</div>
-                          <div className="col-md-9">
-                            <h4 className="mt-0 mb-0">
-                              Master Degree in UI Web Design
-                            </h4>
-                            California Institute of Technology
-                          </div>
-                        </div>
 
-                        <hr />
-
-                        <div className="row">
-                          <div className="col-md-3 black">2014&ndash;2015</div>
-                          <div className="col-md-9">
-                            <h4 className="mt-0 mb-0">
-                              Internships in Software Engineering
-                            </h4>
-                            Massachusetts Institute of Technology
-                          </div>
-                        </div>
-
-                        <hr />
-
-                        <div className="row">
-                          <div className="col-md-3 black">2013&ndash;2014</div>
-                          <div className="col-md-9">
-                            <h4 className="mt-0 mb-0">
-                              Bachelor in Usability Engineering
-                            </h4>
-                            Johns Hopkins University
-                          </div>
-                        </div>
-
-                        <hr />
-                      </div>
-
-                      <div className="col-md-6">
-                        <div className="row">
-                          <div className="col-md-3 black">2012&ndash;2013</div>
-                          <div className="col-md-9">
-                            <h4 className="mt-0 mb-0">Internships in QA</h4>
-                            University of California, Berkeley
-                          </div>
-                        </div>
-
-                        <hr />
-
-                        <div className="row">
-                          <div className="col-md-3 black">2009&ndash;2013</div>
-                          <div className="col-md-9">
-                            <h4 className="mt-0 mb-0">
-                              Bachelor in Computer Science
-                            </h4>
-                            London School of Economics and Political Science
-                          </div>
-                        </div>
-
-                        <hr />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* <!-- End Section Content --> */}
-              </div>
-            </div>
-          </section>
-          {/* <!-- End Education Section --> */}
-
-          {/* <!-- Divider --> */}
-          <hr className="mt-0 mb-0 " />
-          {/* <!-- End Divider --> */}
-
-          {/* <!-- Portfolio Section --> */}
-          <section className="page-section" id="portfolio">
-            <div className="container relative">
-              <div className="row">
-                <div className="col-sm-3">
-                  <h2 className="section-title font-alt align-left mt-0 mb-70 mb-sm-40">
-                    Portfolio
-                  </h2>
-                </div>
-
-                <div className="col-sm-9">
-                  {/* <!-- Works Grid --> */}
-                  <ul
-                    className="works-grid work-grid-3 work-grid-gut clearfix font-alt hover-white hide-titles"
-                    id="work-grid"
-                  >
-                    {/* <!-- Work Item (External Page) --> */}
-                    <li className="work-item mix design photography">
-                      <a
-                        href="portfolio-single-1.html"
-                        className="work-ext-link"
-                      >
-                        <div className="work-img">
-                          <img
-                            className="work-img"
-                            src="images/portfolio/projects-4.jpg"
-                            alt="Work"
-                          />
-                        </div>
-                        <div className="work-intro">
-                          <h3 className="work-title">Space</h3>
-                          <div className="work-descr">External Page</div>
-                        </div>
-                      </a>
-                    </li>
-                    {/* <!-- End Work Item --> */}
-
-                    {/* <!-- Work Item (External Page) --> */}
-                    <li className="work-item mix branding">
-                      <a
-                        href="portfolio-single-1.html"
-                        className="work-ext-link"
-                      >
-                        <div className="work-img">
-                          <img
-                            className="work-img"
-                            src="images/portfolio/projects-6.jpg"
-                            alt="Work"
-                          />
-                        </div>
-                        <div className="work-intro">
-                          <h3 className="work-title">Boy in T-shirt</h3>
-                          <div className="work-descr">External Page</div>
-                        </div>
-                      </a>
-                    </li>
-                    {/* <!-- End Work Item -->
-                                
-                                <!-- Work Item (External Page) --> */}
-                    <li className="work-item mix design">
-                      <a
-                        href="portfolio-single-1.html"
-                        className="work-ext-link"
-                      >
-                        <div className="work-img">
-                          <img
-                            className="work-img"
-                            src="images/portfolio/projects-10.jpg"
-                            alt="Work"
-                          />
-                        </div>
-                        <div className="work-intro">
-                          <h3 className="work-title">Model</h3>
-                          <div className="work-descr">External Page</div>
-                        </div>
-                      </a>
-                    </li>
-                    {/* <!-- End Work Item --> */}
-                  </ul>
-                  {/* <!-- End Works Grid --> */}
-
-                  <div className="align-right mt-20">
-                    <a
-                      href="portfolio-boxed-gutter-3col.html"
-                      className="btn btn-mod btn-gray btn-small btn-circle"
-                    >
-                      More Works <i className="fa fa-angle-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          {/* <!-- End Portfolio Section -->
-            
-            
-            <!-- Divider --> */}
           <hr className="mt-0 mb-0 " />
           {/* <!-- End Divider --> */}
 
@@ -591,7 +487,7 @@ class App extends Component {
                     vehicula.
                   </div>
 
-                  <div className="row">
+                  <div className="row" style={{ marginTop: "2em" }}>
                     <div className="col-sm-5 mb-sm-60">
                       {/* <!-- Phone --> */}
                       <div className="contact-item mb-30">
@@ -599,105 +495,60 @@ class App extends Component {
                           <i className="fa fa-phone" />
                         </div>
                         <div className="ci-title font-alt">Phone</div>
-                        <div className="ci-text">+11 3 8376 6284</div>
+                        <div className="ci-text">615-415-1709</div>
                       </div>
                       {/* <!-- End Phone --> */}
 
                       <hr className="mb-30" />
 
-                      {/* <!-- Address --> */}
                       <div className="contact-item mb-30">
                         <div className="ci-icon">
-                          <i className="fa fa-map-marker" />
+                          <i className="fa fa-github" />
                         </div>
-                        <div className="ci-title font-alt">Address</div>
-                        <div className="ci-text">245 Quigley Blvd, Ste K</div>
+                        <div className="ci-title font-alt">Github</div>
+                        <div className="ci-text">
+                          <a
+                            href="https://github.com/dakotachantz"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            github.com/dakotachantz
+                          </a>
+                        </div>
                       </div>
-                      {/* <!-- End Address --> */}
-
                       <hr className="mb-30" />
-
-                      {/* <!-- Email --> */}
-                      <div className="contact-item">
+                    </div>
+                    <div className="col-sm-5 mb-sm-60">
+                      <div className="contact-item mb-30">
                         <div className="ci-icon">
                           <i className="fa fa-envelope" />
                         </div>
                         <div className="ci-title font-alt">Email</div>
                         <div className="ci-text">
-                          <a href="mailto:support@bestlooker.pro">
-                            support@bestlooker.pro
+                          <a href="mailto:dakotachantz@gmail.com">
+                            dakotachantz@gmail.com
                           </a>
                         </div>
                       </div>
-                      {/* <!-- End Email --> */}
-                    </div>
-
-                    <div className="col-sm-7">
-                      <form className="form contact-form" id="contact_form">
-                        <div className="clearfix">
-                          {/* <!-- Name --> */}
-                          <div className="form-group">
-                            <input
-                              type="text"
-                              name="name"
-                              id="name"
-                              className="input-md round form-control"
-                              placeholder="Name"
-                              pattern=".{3,100}"
-                              required
-                            />
-                          </div>
-
-                          {/* <!-- Email --> */}
-                          <div className="form-group">
-                            <input
-                              type="email"
-                              name="email"
-                              id="email"
-                              className="input-md round form-control"
-                              placeholder="Email"
-                              pattern=".{5,100}"
-                              required
-                            />
-                          </div>
-
-                          {/* <!-- Message --> */}
-                          <div className="form-group">
-                            <textarea
-                              name="message"
-                              id="message"
-                              className="input-md round form-control"
-                              style={{ height: 100 }}
-                              placeholder="Message"
-                            />
-                          </div>
+                      <hr className="mb-30" />
+                      <div className="contact-item mb-30">
+                        <div className="ci-icon">
+                          <i className="fa fa-linkedin" />
                         </div>
-
-                        <div className="clearfix">
-                          <div className="cf-left-col">
-                            {/* <!-- Inform Tip -->                                         */}
-                            <div className="form-tip pt-20">
-                              <i className="fa fa-info-circle" /> All the fields
-                              are required
-                            </div>
-                          </div>
-
-                          <div className="cf-right-col">
-                            {/* <!-- Send Button --> */}
-                            <div className="align-right pt-10">
-                              <button
-                                className="submit_btn btn btn-mod btn-medium btn-circle"
-                                id="submit_btn"
-                              >
-                                Submit
-                              </button>
-                            </div>
-                          </div>
+                        <div className="ci-title font-alt">LinkedIn</div>
+                        <div className="ci-text">
+                          <a
+                            href="https://www.linkedin.com/in/dakotachantz/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            linkedin.com/in/dakotachantz
+                          </a>
                         </div>
-
-                        <div id="result" />
-                      </form>
+                      </div>
+                      <hr className="mb-30" />
                     </div>
+                    {/* <!-- End Email --> */}
                   </div>
                 </div>
               </div>
@@ -706,62 +557,16 @@ class App extends Component {
           {/* <!-- End Contact Section --> */}
 
           {/* <!-- Foter --> */}
-          <footer className="page-section bg-gray-lighter footer pb-60">
+          <footer
+            className="page-section bg-gray-lighter footer"
+            style={{ padding: "2em" }}
+          >
             <div className="container">
-              {/* <!-- Footer Logo --> */}
-              <div
-                className="local-scroll mb-30 wow fadeInUp"
-                data-wow-duration="1.5s"
-              >
-                <a href="#top">
-                  <img
-                    src="images/logo-footer.png"
-                    width="78"
-                    height="36"
-                    alt=""
-                  />
-                </a>
-              </div>
-              {/* <!-- End Footer Logo -->
-                    
-                    <!-- Social Links --> */}
-              <div className="footer-social-links mb-110 mb-xs-60">
-                <a href="#" title="Facebook" target="_blank">
-                  <i className="fa fa-facebook" />
-                </a>
-                <a href="#" title="Twitter" target="_blank">
-                  <i className="fa fa-twitter" />
-                </a>
-                <a href="#" title="Behance" target="_blank">
-                  <i className="fa fa-behance" />
-                </a>
-                <a href="#" title="LinkedIn+" target="_blank">
-                  <i className="fa fa-linkedin" />
-                </a>
-                <a href="#" title="Pinterest" target="_blank">
-                  <i className="fa fa-pinterest" />
-                </a>
-              </div>
-              {/* <!-- End Social Links -->   */}
-
-              {/* <!-- Footer Text --> */}
               <div className="footer-text">
-                {/* <!-- Copyright --> */}
                 <div className="footer-copy font-alt">
-                  <a
-                    href="http://themeforest.net/user/theme-guru/portfolio"
-                    target="_blank"
-                  >
-                    &copy; Rhythm 2017
-                  </a>.
-                </div>
-                {/* <!-- End Copyright --> */}
-
-                <div className="footer-made">
-                  Made with love for great people.
+                  &copy; Dakota Nichols 2017.
                 </div>
               </div>
-              {/* <!-- End Footer Text -->  */}
             </div>
 
             {/* <!-- Top Link --> */}
