@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-
+import reactScroll from "react-scroll";
+var Link = reactScroll.Link;
 export default class Skills extends Component {
   render() {
     return (
@@ -43,6 +44,24 @@ export default class Skills extends Component {
             </div>
           </div>
         </div>
+        <section className="scrollArrow">
+          <Link
+            to="portfolio"
+            activeClass="activeScroll"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <span
+              className="fa fa-angledown"
+              style={{
+                borderBottom: "2px solid",
+                borderLeft: "2px solid"
+              }}
+            />
+          </Link>
+        </section>
       </section>
     );
   }

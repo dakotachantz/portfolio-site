@@ -1,42 +1,43 @@
 import React, { Component } from "react";
-import reactScroll from "react-scroll";
+import resume from "../documents/Dakota_Nichols_Resume.pdf";
 import Headroom from "react-headroom";
+import reactScroll from "react-scroll";
 var Link = reactScroll.Link;
 
 export default class NavBar extends Component {
-  //   constructor(props) {
-  //     super(props);
-  //     this.state = {
-  //       backgroundColor: "transparent"
-  //     };
-  //   }
-  //   componentWillMount() {
-  //     window.addEventListener("scroll", this.handleScroll);
-  //   }
+  constructor(props) {
+    super(props);
+    this.state = {
+      backgroundColor: "transparent"
+    };
+  }
+  componentWillMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
 
-  //   handleScroll = e => {
-  //     const scrollTop =
-  //       window.pageYOffset !== undefined
-  //         ? window.pageYOffset
-  //         : (document.documentElement ||
-  //             document.body.parentNode ||
-  //             document.body
-  //           ).scrollTop;
-  //     if (scrollTop < 20) {
-  //       this.setState({
-  //         backgroundColor: "transparent"
-  //       });
-  //     } else {
-  //       this.setState({ backgroundColor: "rgba(27, 27, 27, .7)" });
-  //     }
-  //   };
+  handleScroll = e => {
+    const scrollTop =
+      window.pageYOffset !== undefined
+        ? window.pageYOffset
+        : (document.documentElement ||
+            document.body.parentNode ||
+            document.body
+          ).scrollTop;
+    if (scrollTop < 20) {
+      this.setState({
+        backgroundColor: "transparent"
+      });
+    } else {
+      this.setState({ backgroundColor: "rgba(27, 27, 27, .7)" });
+    }
+  };
   render() {
     return (
       <Headroom>
         <nav
-          className="main-nav dark stick-fixed"
+          className="main-nav dark"
           style={{
-            backgroundColor: "rgba(27, 27, 27, .7)"
+            backgroundColor: this.state.backgroundColor
           }}
         >
           <div
@@ -122,7 +123,7 @@ export default class NavBar extends Component {
 
                 {/* <!-- Button --> */}
                 <li>
-                  <a href="" target="_blank">
+                  <a href={resume} target="_blank">
                     <span className="btn btn-mod btn-circle">
                       <i className="fa fa-cloud-download" /> Download CV
                     </span>
