@@ -1950,8 +1950,13 @@ a.link-to-top {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.2) !important;
   font-size: 48px;
+  cursor: pointer;
+}
+
+.link-to-top:hover {
+  color: #111 !important;
 }
 
 .margin-block {
@@ -1995,4 +2000,50 @@ a.link-to-top {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.scrollArrow {
+  margin-top: 100px;
+}
+.scrollArrow a span {
+  position: relative;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb04 2s infinite;
+  animation: sdb04 2s infinite;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+@-webkit-keyframes sdb04 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+@keyframes sdb04 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+a {
+  cursor: pointer;
 }

@@ -5,6 +5,10 @@ import basicsMockup from "./images/e-commerce-site.png";
 import codeSnippetMockup from "./images/code-snippets.png";
 import songShareMockup from "./images/song-share-app.png";
 
+import reactScroll from "react-scroll";
+
+var Link = reactScroll.Link;
+
 class App extends Component {
   render() {
     return (
@@ -26,12 +30,6 @@ class App extends Component {
                 alignItems: "center"
               }}
             >
-              {/* <!-- Logo ( * your text or image into link tag *) --> */}
-              <div className="nav-logo-wrap local-scroll">
-                <a href="#top" className="logo">
-                  <img src="images/logo-white.png" alt="" />
-                </a>
-              </div>
               <div className="mobile-nav">
                 <i className="fa fa-bars" />
               </div>
@@ -45,19 +43,64 @@ class App extends Component {
                   }}
                 >
                   <li className="active">
-                    <a href="#home">Home</a>
+                    <Link
+                      to="home"
+                      activeClass="activeScroll"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                    >
+                      Home
+                    </Link>
                   </li>
                   <li>
-                    <a href="#skills">Skills</a>
+                    <Link
+                      to="skills"
+                      activeClass="activeScroll"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                    >
+                      Skills
+                    </Link>
                   </li>
                   <li>
-                    <a href="#portfolio">Portfolio</a>
+                    <Link
+                      to="portfolio"
+                      activeClass="activeScroll"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                    >
+                      Portfolio
+                    </Link>
                   </li>
                   <li>
-                    <a href="#experience">Experience</a>
+                    <Link
+                      to="experience"
+                      activeClass="activeScroll"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                    >
+                      Experience
+                    </Link>
                   </li>
                   <li>
-                    <a href="#contact">Contact</a>
+                    <Link
+                      to="contact"
+                      activeClass="activeScroll"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                    >
+                      Contact
+                    </Link>
                   </li>
 
                   {/* <!-- Button --> */}
@@ -106,6 +149,18 @@ class App extends Component {
                           tortor.
                         </p>
                         <hr className="white mb-30" />
+                        <section className="scrollArrow">
+                          <Link
+                            to="skills"
+                            activeClass="activeScroll"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                          >
+                            <span className="fa fa-angledown" />
+                          </Link>
+                        </section>
                       </div>
                     </div>
                   </div>
@@ -115,9 +170,12 @@ class App extends Component {
           </section>
           {/* <!-- End Home Section -->
             
-            
             <!-- Skills Section --> */}
-          <section className="page-section" id="skills" style={{minHeight: '100vh'}}>
+          <section
+            className="page-section"
+            id="skills"
+            style={{ minHeight: "100vh" }}
+          >
             <div className="container relative">
               <div className="row">
                 <div className="col-sm-3">
@@ -412,7 +470,12 @@ class App extends Component {
                       </div>
                       <div className="col-md-10">
                         <h4 className="mt-0 mb-0">Solutions Specialist</h4>
-                      Engage customers to build customized solutions in a dynamic environment.<br/> Accumulate and apply appropriate knowledge and expertise through self-development and continuous learning.<br/> Utilize sales expertise, passion for Verizon technology and customer interaction skills.
+                        Engage customers to build customized solutions in a
+                        dynamic environment.<br /> Accumulate and apply
+                        appropriate knowledge and expertise through
+                        self-development and continuous learning.<br /> Utilize
+                        sales expertise, passion for Verizon technology and
+                        customer interaction skills.
                       </div>
                     </div>
                   </div>
@@ -430,7 +493,11 @@ class App extends Component {
           {/* <!-- End Divider --> */}
 
           {/* <!-- Contact Section --> */}
-          <section className="page-section" id="contact" style={{minHeight: '90vh'}}>
+          <section
+            className="page-section"
+            id="contact"
+            style={{ minHeight: "90vh" }}
+          >
             <div className="container relative">
               <div className="row">
                 <div className="col-sm-3">
@@ -455,7 +522,10 @@ class App extends Component {
                           <i className="fa fa-phone" />
                         </div>
                         <div className="ci-title font-alt">Phone</div>
-                        <div className="ci-text">615-415-1709</div>
+                        <div className="ci-text">
+                          {" "}
+                          <a href="tel:6154151709">615-415-1709</a>
+                        </div>
                       </div>
                       {/* <!-- End Phone --> */}
 
@@ -531,9 +601,17 @@ class App extends Component {
 
             {/* <!-- Top Link --> */}
             <div className="local-scroll">
-              <a href="#top" className="link-to-top">
+              <Link
+                to="top"
+                activeClass="activeScroll"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={200}
+                className="link-to-top"
+              >
                 <i className="fa fa-caret-up" />
-              </a>
+              </Link>
             </div>
             {/* <!-- End Top Link --> */}
           </footer>
