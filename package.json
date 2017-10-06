@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "header-scroll-up": "^0.1.1",
+    "headroom.js": "^0.9.4",
+    "jquery": "^3.2.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-headroom": "^2.2.1",
     "react-scripts": "1.0.14",
     "react-scroll": "^1.5.5"
   },

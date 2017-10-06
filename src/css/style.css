@@ -1049,7 +1049,7 @@ a.btn-mod:focus {
 .hs-line-4 {
   margin-top: 0;
   position: relative;
-  font-size: 14px;
+  font-size: 25px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -1216,6 +1216,8 @@ a.btn-mod:focus {
   -o-transition: height 0.27s cubic-bezier(0, 0, 0.58, 1);
   -ms-transition: height 0.27s cubic-bezier(0, 0, 0.58, 1);
   transition: height 0.27s cubic-bezier(0, 0, 0.58, 1);
+  display: flex;
+  justify-content: flex-end;
 }
 .inner-nav {
   display: inline-block;
@@ -2046,4 +2048,34 @@ a.link-to-top {
 
 a {
   cursor: pointer;
+}
+
+.header--fixed {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.header--fixed.top {
+  transition: none;
+  transform: translateY(0);
+}
+.header--fixed.not-top {
+  position: fixed;
+  transform: translateY(-100%);
+}
+.header--fixed.slideDown.not-top {
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(0);
+}
+.header--fixed.slideDown.top {
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+}
+.header--fixed.slideUp.not-top {
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-100%);
+}
+.header--fixed.slideUp.top {
+  transform: translateY(-100%);
+  position: absolute;
 }
