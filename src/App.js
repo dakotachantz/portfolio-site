@@ -6,7 +6,6 @@ class App extends Component {
   render() {
     return (
       <div className="appear-animate">
-        {/* <!-- Page Loader -->         */}
         <div className="page-loader">
           <div className="loader">Loading...</div>
         </div>

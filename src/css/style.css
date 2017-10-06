@@ -432,63 +432,6 @@ hr.black {
   padding: 2px 8px 2px 0;
 }
 
-.big-icon {
-  display: block;
-  width: 90px;
-  height: 90px;
-  margin: 0 auto 20px;
-  border: 3px solid #fff;
-  text-align: center;
-  line-height: 88px;
-  font-size: 32px;
-  color: rgba(255, 255, 255, 0.97);
-
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-
-  -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-  -moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-  -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-  -ms-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-  transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-}
-.big-icon .fa-play {
-  position: relative;
-  left: 4px;
-}
-.big-icon.big-icon-rs {
-  border: none;
-  width: auto;
-  height: auto;
-  font-size: 96px;
-}
-
-.big-icon-link {
-  display: inline-block;
-  text-decoration: none;
-}
-.big-icon-link:hover {
-  border-color: transparent !important;
-}
-.big-icon-link:hover .big-icon {
-  border-color: #fff;
-  color: #fff;
-
-  -webkit-transition: 0 none !important;
-  -moz-transition: 0 none !important;
-  -ms-transition: 0 none !important;
-  -o-transition: 0 none !important;
-  transition: 0 none !important;
-}
-.big-icon-link:active .big-icon {
-  -webkit-transform: scale(0.99);
-  -moz-transform: scale(0.99);
-  -o-transform: scale(0.99);
-  -ms-transform: scale(0.99);
-  transform: scale(0.99);
-}
-
 .wide-heading {
   display: block;
   margin-bottom: 10px;
@@ -506,11 +449,6 @@ hr.black {
   transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
 }
 
-.big-icon-link:hover,
-.big-icon-link:hover .wide-heading {
-  color: #fff;
-  text-decoration: none;
-}
 .sub-heading {
   font-size: 16px;
   font-style: italic;
@@ -519,21 +457,8 @@ hr.black {
   color: rgba(255, 255, 255, 0.75);
 }
 
-.big-icon.black {
-  color: #000;
-  border-color: rgba(0, 0, 0, 0.75);
-}
-.big-icon-link:hover .big-icon.black {
-  color: #000;
-  border-color: #000;
-}
 .wide-heading.black {
   color: rgba(0, 0, 0, 0.87);
-}
-.big-icon-link.black:hover,
-.big-icon-link:hover .wide-heading.black {
-  color: #000;
-  text-decoration: none;
 }
 .sub-heading.black {
   color: rgba(0, 0, 0, 0.75);
@@ -1134,7 +1059,7 @@ a.btn-mod:focus {
   -ms-transition: height 0.27s cubic-bezier(0, 0, 0.58, 1);
   transition: height 0.27s cubic-bezier(0, 0, 0.58, 1);
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 .inner-nav {
   display: inline-block;
@@ -1705,7 +1630,6 @@ a.btn-mod:focus {
 .work-descr {
   font-size: 1.2em;
   text-align: center;
-  text-transform: uppercase;
   color: #aaa;
   line-height: 1.2;
 }

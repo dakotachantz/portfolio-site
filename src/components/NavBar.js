@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import resume from "../documents/Dakota_Nichols_Resume.pdf";
+import logo from "../images/logo.png";
 import Headroom from "react-headroom";
 import reactScroll from "react-scroll";
 var Link = reactScroll.Link;
@@ -40,6 +41,12 @@ export default class NavBar extends Component {
             backgroundColor: this.state.backgroundColor
           }}
         >
+          <span
+            className="navbar-brand"
+            style={{ display: "flex", alignItems: "center", margin: "0 3rem" }}
+          >
+            <img style={{ height: 45 }} src={logo} alt="" />
+          </span>
           <div
             className="full-wrapper relative clearfix"
             style={{

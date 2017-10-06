@@ -58,7 +58,7 @@ export default class Portfolio extends Component {
               Basics
             </h3>
             <div className="work-descr" style={{ color: "#fff" }}>
-              Mock E-commerce Site. Built with love, React, and Bootstrap.
+              Built with JavaScript, React, and Bootstrap.
             </div>
             <div className="workButtons">
               <a
@@ -111,7 +111,8 @@ export default class Portfolio extends Component {
               Code Snippets
             </h3>
             <div className="work-descr" style={{ color: "#fff" }}>
-              Built with NodeJS, MongoDB, Mustache, and Express.
+              Built with NodeJS, MongoDB, Mustache, HTML, CSS, JavaScript, and
+              Express.
             </div>
             <div className="workButtons">
               <a
@@ -165,7 +166,7 @@ export default class Portfolio extends Component {
               Song Share App
             </h3>
             <div className="work-descr" style={{ color: "#fff" }}>
-              Built with NodeJS, MongoDB, Mustache, and Express.
+              Built with JavaScript, React, and Bootstrap.
             </div>
             <div className="workButtons">
               <a
