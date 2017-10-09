@@ -67,7 +67,7 @@ export default class Portfolio extends Component {
                 rel="noopener noreferrer"
                 className="btn btn-mod btn-medium"
               >
-                Demo
+                Live
               </a>
               <a
                 href="https://github.com/dakotachantz/e-commerce-site"
@@ -121,7 +121,7 @@ export default class Portfolio extends Component {
                 rel="noopener noreferrer"
                 className="btn btn-mod btn-medium"
               >
-                Demo
+                Live
               </a>
               <a
                 href="https://github.com/dakotachantz/code-snippet"
@@ -175,7 +175,7 @@ export default class Portfolio extends Component {
                 rel="noopener noreferrer"
                 className="btn btn-mod btn-medium"
               >
-                Demo
+                Live
               </a>
               <a
                 href="https://github.com/dakotachantz/song-share-app"
