@@ -18,9 +18,7 @@ export default class Contact extends Component {
 
             <div className="col-sm-9">
               <div className="section-text">
-                Curabitur eu adipiscing lacus, a iaculis diam. Nullam placerat
-                blandit auctor. Nulla accumsan ipsum et nibh rhoncus, eget
-                tempus sapien ultricies. Donec mollis lorem vehicula.
+                Currently open for opportunities. Let's get in touch!
               </div>
 
               <div className="row" style={{ marginTop: "2em" }}>
