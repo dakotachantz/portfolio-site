@@ -19,12 +19,14 @@ export default class Skills extends Component {
 
             <div className="col-sm-9">
               <div className="section-text mb-50 mb-xs-30">
-                Larensy in&nbsp;auctor ex&nbsp;id&nbsp;urna faucibus porttitor.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                In&nbsp;maximus ligula semper metus pellentesque mattis.
-                Maecenas volutpat, diam enim sagittis quam, id&nbsp;porta quam.
-                Sed id&nbsp;dolor consectetur fermentum nibh volutpat, accumsan
-                purus.
+                As a leader in marketing, I learned to be empathetic to the
+                consumer and my team, adaptable to everchanging goals, open to
+                new ideas, and to approach each opportunity with a positive
+                mindset. These experiences have made me a better developer - one
+                who thrives on collaboration and always keeps the business'
+                needs at the forefront of the solutions I create.
+                <br />
+                <br />Here are some tools I use currently to build things!
               </div>
 
               <div className="row skill-list">
