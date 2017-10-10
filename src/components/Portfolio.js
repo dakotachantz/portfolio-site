@@ -13,6 +13,7 @@ export default class Portfolio extends Component {
           className="parallax"
           style={{
             backgroundImage: `url(${basicsMockup})`,
+            WebkitBackgroundImage: `url(${basicsMockup})`,
             height: "100%",
             minHeight: "100vh",
             width: "100%",
@@ -81,6 +82,7 @@ export default class Portfolio extends Component {
           className="parallax"
           style={{
             backgroundImage: `url(${codeSnippetMockup})`,
+            WebkitBackgroundImage: `url(${codeSnippetMockup})`,
             height: "100%",
             minHeight: "100vh",
             width: "100%",
@@ -136,6 +138,7 @@ export default class Portfolio extends Component {
           className="parallax"
           style={{
             backgroundImage: `url(${songShareMockup})`,
+            WebkitBackgroundImage: `url(${songShareMockup})`,
             height: "100%",
             minHeight: "100vh",
             width: "100%",
