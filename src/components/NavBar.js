@@ -17,6 +17,10 @@ export default class NavBar extends Component {
   }
 
   handleScroll = e => {
+    let mobileNav = document.querySelector(".sidenav");
+    if (mobileNav.style.display !== "none") {
+      mobileNav.style.display = "none";
+    }
     const scrollTop =
       window.pageYOffset !== undefined
         ? window.pageYOffset
@@ -32,6 +36,16 @@ export default class NavBar extends Component {
       this.setState({ backgroundColor: "rgba(27, 27, 27, .7)" });
     }
   };
+
+  toggleNav = () => {
+    let nav = document.querySelector(".sidenav");
+    if (nav.style.display !== "flex") {
+      nav.style.display = "flex";
+    } else {
+      nav.style.display = "none";
+    }
+  };
+
   render() {
     return (
       <Headroom>
@@ -56,21 +70,97 @@ export default class NavBar extends Component {
             }}
           >
             <div className="mobile-nav">
-              <i className="fa fa-bars" />
+              <i onClick={this.toggleNav} className="fa fa-bars" />
+              <div className="sidenav">
+                <span
+                  onClick={this.toggleNav}
+                  className="fa fa-times closebtn"
+                />
+                <ul className="" style={{ listStyle: "none" }}>
+                  <li>
+                    <Link
+                      to="home"
+                      activeClassName="activeScroll"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={700}
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="skills"
+                      activeClassName="activeScroll"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={700}
+                    >
+                      Skills
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="portfolio"
+                      activeClassName="activeScroll"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={700}
+                    >
+                      Portfolio
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="experience"
+                      activeClassName="activeScroll"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={700}
+                    >
+                      Experience
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="contact"
+                      activeClassName="activeScroll"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={700}
+                    >
+                      Contact
+                    </Link>
+                  </li>
+
+                  {/* <!-- Button --> */}
+                  <li>
+                    <a href={resume} target="_blank">
+                      <span
+                        className="btn btn-mod btn-circle"
+                        style={{ margin: 0 }}
+                      >
+                        <i className="fa fa-cloud-download" /> Download CV
+                      </span>
+                    </a>
+                  </li>
+                  {/* <!-- End Button --> */}
+                </ul>
+              </div>
             </div>
+
             {/* <!-- Main Menu --> */}
-            <div className="inner-nav desktop-nav">
-              <ul
-                className="clearlist scroll-nav local-scroll"
-                style={{
-                  display: "flex",
-                  alignItems: "center"
-                }}
-              >
+            <div className="inner-nav">
+              <ul className="clearlist scroll-nav local-scroll">
                 <li className="active">
                   <Link
                     to="home"
-                    activeClass="activeScroll"
+                    activeClassName="activeScroll"
                     spy={true}
                     smooth={true}
                     offset={0}
@@ -82,7 +172,7 @@ export default class NavBar extends Component {
                 <li>
                   <Link
                     to="skills"
-                    activeClass="activeScroll"
+                    activeClassName="activeScroll"
                     spy={true}
                     smooth={true}
                     offset={0}
@@ -94,7 +184,7 @@ export default class NavBar extends Component {
                 <li>
                   <Link
                     to="portfolio"
-                    activeClass="activeScroll"
+                    activeClassName="activeScroll"
                     spy={true}
                     smooth={true}
                     offset={0}
@@ -106,7 +196,7 @@ export default class NavBar extends Component {
                 <li>
                   <Link
                     to="experience"
-                    activeClass="activeScroll"
+                    activeClassName="activeScroll"
                     spy={true}
                     smooth={true}
                     offset={0}
@@ -118,7 +208,7 @@ export default class NavBar extends Component {
                 <li>
                   <Link
                     to="contact"
-                    activeClass="activeScroll"
+                    activeClassName="activeScroll"
                     spy={true}
                     smooth={true}
                     offset={0}

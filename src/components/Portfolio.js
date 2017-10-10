@@ -35,10 +35,7 @@ export default class Portfolio extends Component {
               flexDirection: "column"
             }}
           >
-            <h2
-              className="section-title font-alt align-left mt-0 mb-70 mb-sm-40"
-              style={{ color: "#fff", padding: "100px 60px" }}
-            >
+            <h2 className="section-title font-alt align-left mt-0 mb-70 mb-sm-40 portfolio-title">
               Portfolio
             </h2>
           </div>
