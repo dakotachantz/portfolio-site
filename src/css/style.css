@@ -1202,7 +1202,6 @@ a.btn-mod:focus {
   display: block;
   position: relative;
   overflow: hidden;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
 
@@ -1821,7 +1820,6 @@ a.link-to-top {
   height: 500px;
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1915,6 +1913,12 @@ a {
   }
   .inner-nav {
     display: flex;
+  }
+  .parallax {
+    background-attachment: fixed;
+  }
+  .page-section {
+    background-attachment: fixed;
   }
 }
 
