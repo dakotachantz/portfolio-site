@@ -1882,6 +1882,10 @@ a {
   padding: 100px 0;
 }
 
+.row {
+  justify-content: center;
+}
+
 @media (min-width: 576px) {
   .portfolio-title {
     padding: 100px 60px;
