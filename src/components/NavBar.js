@@ -76,11 +76,10 @@ export default class NavBar extends Component {
                   onClick={this.toggleNav}
                   className="fa fa-times closebtn"
                 />
-                <ul className="" style={{ listStyle: "none" }}>
+                <ul style={{ listStyle: "none" }}>
                   <li>
                     <Link
                       to="home"
-                      activeClassName="activeScroll"
                       spy={true}
                       smooth={true}
                       offset={0}
@@ -92,7 +91,6 @@ export default class NavBar extends Component {
                   <li>
                     <Link
                       to="skills"
-                      activeClassName="activeScroll"
                       spy={true}
                       smooth={true}
                       offset={0}
@@ -104,7 +102,6 @@ export default class NavBar extends Component {
                   <li>
                     <Link
                       to="portfolio"
-                      activeClassName="activeScroll"
                       spy={true}
                       smooth={true}
                       offset={0}
@@ -116,7 +113,6 @@ export default class NavBar extends Component {
                   <li>
                     <Link
                       to="experience"
-                      activeClassName="activeScroll"
                       spy={true}
                       smooth={true}
                       offset={0}
@@ -128,7 +124,6 @@ export default class NavBar extends Component {
                   <li>
                     <Link
                       to="contact"
-                      activeClassName="activeScroll"
                       spy={true}
                       smooth={true}
                       offset={0}
@@ -160,7 +155,6 @@ export default class NavBar extends Component {
                 <li className="active">
                   <Link
                     to="home"
-                    activeClassName="activeScroll"
                     spy={true}
                     smooth={true}
                     offset={0}
@@ -172,7 +166,6 @@ export default class NavBar extends Component {
                 <li>
                   <Link
                     to="skills"
-                    activeClassName="activeScroll"
                     spy={true}
                     smooth={true}
                     offset={0}
@@ -184,7 +177,6 @@ export default class NavBar extends Component {
                 <li>
                   <Link
                     to="portfolio"
-                    activeClassName="activeScroll"
                     spy={true}
                     smooth={true}
                     offset={0}
@@ -196,7 +188,6 @@ export default class NavBar extends Component {
                 <li>
                   <Link
                     to="experience"
-                    activeClassName="activeScroll"
                     spy={true}
                     smooth={true}
                     offset={0}
@@ -208,7 +199,6 @@ export default class NavBar extends Component {
                 <li>
                   <Link
                     to="contact"
-                    activeClassName="activeScroll"
                     spy={true}
                     smooth={true}
                     offset={0}

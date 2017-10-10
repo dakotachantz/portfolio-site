@@ -5,7 +5,7 @@ import { Layout } from "./components";
 class App extends Component {
   componentDidMount() {
     console.log(
-      "WHOA! You just opened the dev tools. You must be a developer! Since you're here... How about a joke? How do you comfort a JavaScript Bug? ... You console it! Also you should hire me!"
+      "WHOA! You just opened the dev tools. You must be a developer! Since you're here... How about a joke? How do you comfort a JavaScript bug? ... You console it! Also you should hire me!"
     );
   }
 
