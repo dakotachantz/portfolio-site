@@ -62,7 +62,7 @@ export default class Portfolio extends Component {
             </div>
             <div className="workButtons">
               <a
-                href="http://back-to-basics.surge.sh/"
+                href="https://homelesshelper.co/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-mod btn-medium"
@@ -70,7 +70,7 @@ export default class Portfolio extends Component {
                 Live
               </a>
               <a
-                href="https://github.com/dakotachantz/e-commerce-site"
+                href="https://github.com/dakotachantz/homeless-helper"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-mod btn-medium"
