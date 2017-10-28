@@ -21,12 +21,12 @@ export default class Header extends Component {
                   <div className="section-text white text-justify">
                     <p>
                       <span className="dropcap font-alt">M</span>y name is
-                      Dakota Nichols. Former sales & marketing professional
-                      turned web developer. Which is just a fancy way of saying
-                      I run on coffee, creativity, and now I get to solve the
-                      world's business problems with code everyday. I made a
-                      shift into software development for a career that would
-                      challenge me, and provide an outlet for continued growth.
+                      Dakota Nichols. I am a Web Developer. Which is just a
+                      fancy way of saying I run on coffee, creativity, and now I
+                      get to solve the world's business problems with code
+                      everyday. I made a shift into software development for a
+                      career that would challenge me, and provide an outlet for
+                      continued growth.
                     </p>
                     <p>
                       I enjoy beautiful design, clean functional code, long

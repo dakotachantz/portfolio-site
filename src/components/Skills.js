@@ -19,12 +19,13 @@ export default class Skills extends Component {
 
             <div className="col-sm-9">
               <div className="section-text mb-50 mb-xs-30">
-                As a leader in marketing, I learned to be empathetic to the
-                consumer and my team, adaptable to everchanging goals, open to
-                new ideas, and to approach each opportunity with a positive
-                mindset. These experiences have made me a better developer - one
-                who thrives on collaboration and always keeps the business'
-                needs at the forefront of the solutions I create.
+                In my previous role as a leader in marketing, I learned to be
+                empathetic to the consumer and my team, adaptable to
+                everchanging goals, open to new ideas, and to approach each
+                opportunity with a positive mindset. These experiences have made
+                me a better developer - one who thrives on collaboration and
+                always keeps the business' needs at the forefront of the
+                solutions I create.
                 <br />
                 <br />Here are some tools I use currently to build things!
               </div>
