@@ -19,7 +19,7 @@ export default class Skills extends Component {
 
             <div className="col-sm-9">
               <div className="section-text mb-50 mb-xs-30">
-                In my previous role as a leader in marketing, I learned to be
+                In my previous career as a leader in marketing, I learned to be
                 empathetic to the consumer and my team, adaptable to
                 everchanging goals, open to new ideas, and to approach each
                 opportunity with a positive mindset. These experiences have made
@@ -43,6 +43,12 @@ export default class Skills extends Component {
                 <i className="devicon-mongodb-plain devicon" />
                 <i className="devicon-postgresql-plain devicon" />
                 <i className="devicon-sequelize-plain devicon" />
+                <i className="devicon-amazonwebservices-plain devicon" />
+                <i className="devicon-visualstudio-plain devicon" />
+                <i className="devicon-webpack-plain devicon" />
+                <i className="devicon-redis-plain devicon" />
+                <i className="devicon-docker-plain devicon" />
+                <i className="devicon-babel-plain devicon" />
               </div>
             </div>
           </div>

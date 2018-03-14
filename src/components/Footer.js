@@ -13,7 +13,7 @@ export default class Footer extends Component {
         <div className="container">
           <div className="footer-text">
             <div className="footer-copy font-alt">
-              &copy; Dakota Nichols 2017.
+              &copy; Dakota Nichols 2018.
             </div>
           </div>
         </div>

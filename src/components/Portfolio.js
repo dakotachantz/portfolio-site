@@ -4,6 +4,8 @@ import basicsMockup from "../images/e-commerce-site.png";
 import codeSnippetMockup from "../images/code-snippets.png";
 import songShareMockup from "../images/song-share-app.png";
 import homelessHelperMockup from "../images/homelesshelper.png";
+import bentCreekMockup from "../images/bent-creek.png";
+import itunesMusicPlayerMockup from "../images/itunes-music-player.png";
 
 export default class Portfolio extends Component {
   render() {
@@ -126,6 +128,114 @@ export default class Portfolio extends Component {
               </a>
               <a
                 href="https://github.com/dakotachantz/e-commerce-site"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-mod btn-medium"
+              >
+                Code
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          className="parallax"
+          style={{
+            backgroundImage: `url(${itunesMusicPlayerMockup})`,
+            WebkitBackgroundImage: `url(${itunesMusicPlayerMockup})`,
+            height: "100%",
+            minHeight: "100vh",
+            width: "100%",
+            backgroundSize: "135%",
+            backgroundPosition: "center",
+            backgroundColor: "#468495",
+            display: "flex",
+            justifyContent: "flex-end",
+            alignItems: "center"
+          }}
+        >
+          <div
+            className="work-intro"
+            style={{
+              width: "50%",
+              backgroundColor: "#468495b3",
+              minHeight: "100vh",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: "column"
+            }}
+          >
+            <h3 className="work-title" style={{ color: "#fff" }}>
+              iTunes Music Player
+            </h3>
+            <div className="work-descr" style={{ color: "#fff" }}>
+              Built with JavaScript, iTunes API, CSS and HTML.
+            </div>
+            <div className="workButtons">
+              <a
+                href="http://thesearchformusic.surge.sh/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-mod btn-medium"
+              >
+                Live
+              </a>
+              <a
+                href="https://github.com/dakotachantz/itunes-music-search"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-mod btn-medium"
+              >
+                Code
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          className="parallax"
+          style={{
+            backgroundImage: `url(${bentCreekMockup})`,
+            WebkitBackgroundImage: `url(${bentCreekMockup})`,
+            height: "100%",
+            minHeight: "100vh",
+            width: "100%",
+            backgroundSize: "135%",
+            backgroundPosition: "center",
+            backgroundColor: "#647D6A",
+            display: "flex",
+            justifyContent: "flex-end",
+            alignItems: "center"
+          }}
+        >
+          <div
+            className="work-intro"
+            style={{
+              width: "50%",
+              backgroundColor: "#647d6ab3",
+              minHeight: "100vh",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: "column"
+            }}
+          >
+            <h3 className="work-title" style={{ color: "#fff" }}>
+              Bent Creek Ceramics
+            </h3>
+            <div className="work-descr" style={{ color: "#fff" }}>
+              Built with HTML, CSS, and JavaScript.
+            </div>
+            <div className="workButtons">
+              <a
+                href="http://bentcreekceramics.surge.sh/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-mod btn-medium"
+              >
+                Live
+              </a>
+              <a
+                href="https://github.com/dakotachantz/week-one-project"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-mod btn-medium"

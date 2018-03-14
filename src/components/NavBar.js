@@ -3,13 +3,15 @@ import resume from "../documents/Dakota_Nichols_Resume.pdf";
 import logo from "../images/logo.png";
 import Headroom from "react-headroom";
 import reactScroll from "react-scroll";
+import MobileNav from "./MobileNav";
 var Link = reactScroll.Link;
 
 export default class NavBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      backgroundColor: "transparent"
+      backgroundColor: "transparent",
+      isOpen: false
     };
   }
   componentWillMount() {
@@ -17,14 +19,17 @@ export default class NavBar extends Component {
   }
 
   handleScroll = e => {
-    let mobileNav = document.querySelector(".sidenav");
-    if (mobileNav.style.display !== "none") {
-      mobileNav.style.display = "none";
-    }
+    // let mobileNav = document.querySelector(".mobileNav");
+    // if (mobileNav.style.display !== "none") {
+    //   mobileNav.style.display = "none";
+    // }
+    let mobileNavOpen = this.state.isOpen;
+    mobileNavOpen === true ? this.setState({ isOpen: false }) : null;
     const scrollTop =
       window.pageYOffset !== undefined
         ? window.pageYOffset
-        : (document.documentElement ||
+        : (
+            document.documentElement ||
             document.body.parentNode ||
             document.body
           ).scrollTop;
@@ -38,12 +43,17 @@ export default class NavBar extends Component {
   };
 
   toggleNav = () => {
-    let nav = document.querySelector(".sidenav");
-    if (nav.style.display !== "flex") {
-      nav.style.display = "flex";
-    } else {
-      nav.style.display = "none";
-    }
+    // let nav = document.querySelector(".mobileNav");
+    // if (nav.style.display !== "flex") {
+    //   nav.style.display = "flex";
+    // } else {
+    //   nav.style.display = "none";
+    // }
+    this.setState({ isOpen: !this.state.isOpen });
+  };
+
+  handleStateChange = state => {
+    this.setState({ isOpen: state.isOpen });
   };
 
   render() {
@@ -70,85 +80,12 @@ export default class NavBar extends Component {
             }}
           >
             <div className="mobile-nav">
-              <i onClick={this.toggleNav} className="fa fa-bars" />
-              <div className="sidenav">
-                <span
-                  onClick={this.toggleNav}
-                  className="fa fa-times closebtn"
-                />
-                <ul style={{ listStyle: "none" }}>
-                  <li>
-                    <Link
-                      to="home"
-                      spy={true}
-                      smooth={true}
-                      offset={0}
-                      duration={700}
-                    >
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="skills"
-                      spy={true}
-                      smooth={true}
-                      offset={0}
-                      duration={700}
-                    >
-                      Skills
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="portfolio"
-                      spy={true}
-                      smooth={true}
-                      offset={0}
-                      duration={700}
-                    >
-                      Portfolio
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="experience"
-                      spy={true}
-                      smooth={true}
-                      offset={0}
-                      duration={700}
-                    >
-                      Experience
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="contact"
-                      spy={true}
-                      smooth={true}
-                      offset={0}
-                      duration={700}
-                    >
-                      Contact
-                    </Link>
-                  </li>
-
-                  {/* <!-- Button --> */}
-                  <li>
-                    <a href={resume} target="_blank">
-                      <span
-                        className="btn btn-mod btn-circle"
-                        style={{ margin: 0 }}
-                      >
-                        <i className="fa fa-cloud-download" /> Download CV
-                      </span>
-                    </a>
-                  </li>
-                  {/* <!-- End Button --> */}
-                </ul>
-              </div>
+              <MobileNav
+                toggleNav={this.toggleNav}
+                isOpen={this.state.isOpen}
+                handleStateChange={this.handleStateChange}
+              />
             </div>
-
             {/* <!-- Main Menu --> */}
             <div className="inner-nav">
               <ul className="clearlist scroll-nav local-scroll">
